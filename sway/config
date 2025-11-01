@@ -3,7 +3,8 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-
+set $iGPU /dev/dri/card1
+exec exec env WLR_DRM_DEVICES=$iGPU
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -85,11 +86,11 @@ workspace 2 output eDP-1
 workspace 3 output eDP-1
 ### Borders
 
-client.focused	#8A00C4 #000000 #8A00C4 #2323FF #8A00C4
+client.focused	#ad02f5 #000000 #ad02f5 #2323FF #ad02f5
 #            (Border) (TitleBG) (TitleText) (Indicator) (ChildBorder)
-client.unfocused #2323FF #000000 #2323FF #8A00C4 #2323FF
-client.focused_inactive #2323FF #000000 #2323FF #8A00C4 #2323FF
-client.urgent	#EE4B2B #000000 #EE4B2B #8A00C4 #EE4B2B
+client.unfocused #2323FF #000000 #2323FF #ad02f5 #2323FF
+client.focused_inactive #2323FF #000000 #2323FF #ad02f5 #2323FF
+client.urgent	#EE4B2B #000000 #EE4B2B #ad02f5 #EE4B2B
 ### Key bindings
 #
 # Basics:
